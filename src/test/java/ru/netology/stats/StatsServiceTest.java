@@ -8,7 +8,7 @@ public class StatsServiceTest {
 
     @Test
     void shouldCalculateTotalSales() {
-        StatsService service = new StatsService();
+        ru.netology.stats.StatsService service = new ru.netology.stats.StatsService();
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long expected = 180;
@@ -20,7 +20,7 @@ public class StatsServiceTest {
 
     @Test
     void shouldCalculateAverageSales() {
-        StatsService service = new StatsService();
+        ru.netology.stats.StatsService service = new ru.netology.stats.StatsService();
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         double expected = 15.0;
@@ -32,7 +32,7 @@ public class StatsServiceTest {
 
     @Test
     void shouldFindMonthWithMaxSales() {
-        StatsService service = new StatsService();
+        ru.netology.stats.StatsService service = new ru.netology.stats.StatsService();
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expected = 6;
@@ -44,7 +44,7 @@ public class StatsServiceTest {
 
     @Test
     void shouldFindMonthWithMinSales() {
-        StatsService service = new StatsService();
+        ru.netology.stats.StatsService service = new ru.netology.stats.StatsService();
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expected = 9;
@@ -56,7 +56,7 @@ public class StatsServiceTest {
 
     @Test
     void shouldFindMonthsBelowAverage() {
-        StatsService service = new StatsService();
+        ru.netology.stats.StatsService service = new ru.netology.stats.StatsService();
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expected = 4;
@@ -68,7 +68,7 @@ public class StatsServiceTest {
 
     @Test
     void shouldFindMonthsAboveAverage() {
-        StatsService service = new StatsService();
+        ru.netology.stats.StatsService service = new ru.netology.stats.StatsService();
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int expected = 6;
@@ -77,4 +77,5 @@ public class StatsServiceTest {
 
         assertEquals(expected, actual);
     }
+
 }

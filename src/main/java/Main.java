@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        StatsService statsService = new StatsService();
+        ru.netology.stats.StatsService statsService = new ru.netology.stats.StatsService();
 
         long[] sales = {100000, 150000, 200000, 120000, 180000, 250000, 300000, 140000, 160000, 220000, 210000, 190000};
 
