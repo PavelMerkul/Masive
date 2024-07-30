@@ -3,11 +3,11 @@ package ru.netology.stats;
 public class StatsService {
 
     public long totalSales(long[] sales) { // сумму всех продаж
-        long total = 0;
+        long totalSales = 0;
         for (long sale : sales) {
-            total += sale;
+            totalSales += sale;
         }
-        return total;
+        return totalSales;
     }
 
     public double averageSales(long[] sales) { // среднюю сумму продаж в месяц
